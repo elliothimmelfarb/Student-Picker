@@ -11,28 +11,26 @@
 <body>
    <div class="app">
       <h1 class="title">Student Picker</h1>
-      <div class="name-input">
+      <!-- <div class="name-input"> -->
          <textarea type="text" name="Names" id="name-box" placeholder="Enter names separated by commas">Joan, Sarah, David, Andy, Luke, Arya, Sam, Jenny, Alph</textarea>
-         <div class="button-div">
-            <button class="b add-names">Add Name(s)</button>
-            <button class="b pick-random">Pick Random Student</button>
-            <button class="b clear-names">Clear Name(s)</button>
-         </div>
-         <div class="teams-form">
-            <button class="make-teams">Make Teams of:</button>
-            <input type="number" id="teams-number" min=1 value="1">
-         </div>
-      </div>
+         <button class="b add-names">Add Students(s)</button>
+         <button class="b clear-names">Clear Students(s)</button>
+      <!-- </div> -->
       <div class="container display-area">
-         <div class="panel">
+         <div class="panel students">
             <h3>Students:</h3>
             <div class="display name-display"></div>
          </div>
-         <div class="panel">
+         <div class="panel random">
+            <button class="b pick-random">Pick Random Student</button>
             <h3>Random Student:</h3>
             <div class="display random-display"></div>
          </div>
-         <div class="panel">
+         <div class="panel teams">
+            <button class="make-teams">Make Teams of:</button>
+            <div class="teams-form">
+               <input type="number" id="teams-number" min=1 value="1">
+            </div>
             <h3>Teams:</h3>
             <div class="display team-display"></div>
          </div>

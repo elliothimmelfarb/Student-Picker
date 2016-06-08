@@ -1,5 +1,24 @@
 body {
    text-align: center;
+   background-color: #00004d;
+   color: white;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.team-list {
+   display: inline-block;
+}
+
+textarea {
+   height: 50px;
+   width: 200px;
+}
+
+.panel {
+   padding-top: 10px;
 }
 
 

@@ -49,6 +49,7 @@ function pickRandom() {
 }
 
 function makeTeams() {
+   document.querySelector('.team-display').innerHTML = '';
    var teamSize = document.querySelector('#teams-number').value;
    //console.log('teamSize:', teamSize);
    var numOfTeams = Math.ceil(nameList.length / teamSize);
@@ -80,32 +81,6 @@ function makeTeams() {
       //console.log('card:', card);
       document.querySelector('.team-display').appendChild(card);
    }
-
-   /*
-      var num = document.querySelector('#teams-number').value;
-      console.log('num:', num);
-      var times = Math.ceil(nameList.length / num)
-      console.log("times:", times)
-      nameIndex = 0
-      for (var i = 0; i <= times; i++) {
-         var team = document.createElement('div');
-         var p = document.createElement('p');
-         p.textContent = "Team " + (i + 1) + ":";
-         console.log(p);
-         team.appendChild(p);
-         console.log("team early:", team);
-         for (var i = 0; i < num; i++) {
-            if (nameIndex <= nameList.length) {
-               var n = document.createElement('p');
-               n.textContent = nameList[nameIndex];
-               console.log("n:", n);
-               team.appendChild(n);
-               console.log("team final:", team)
-               nameIndex++;
-            }
-         }
-         document.querySelector('.team-display').appendChild(team);
-      } */
 }
 
 function shuffle(arr) {
