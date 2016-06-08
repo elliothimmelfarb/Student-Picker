@@ -17,6 +17,7 @@ function addNames() {
    function clean(e) {
       return e && e !== " ";
    }
+
    for (var i = 0; i < names.length; i++) {
       var name = document.createElement('span');
       name.classList.add('name');
@@ -40,10 +41,8 @@ function clearNames() {
 }
 
 function pickRandom() {
-   if (nameList.length < 1) {
-      
-   }
    document.querySelector('.random-display').innerHTML = '';
+   if (true) {}
    var random = Math.floor(Math.random() * nameList.length);
    var name = document.createElement('span');
    var text = document.createTextNode(nameList[random]);

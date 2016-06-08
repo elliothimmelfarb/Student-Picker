@@ -5,11 +5,16 @@ body {
 }
 
 h3 {
-   margin: 10px;
+   margin: 5px;
+   display: block;
 }
 
 ul {
    list-style-type: none;
+}
+
+span {
+   margin: 0px 5px 0px 5px; 
 }
 
 .team-list {
@@ -27,11 +32,15 @@ textarea {
 }
 
 .students * {
-   display: inline;
+   display: inline-block;
 }
 
 .random * {
-   display: inline;
+   display: inline-block;
+}
+
+.make-teams {
+   display: inline-block;
 }
 
 
