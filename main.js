@@ -40,6 +40,9 @@ function clearNames() {
 }
 
 function pickRandom() {
+   if (nameList.length < 1) {
+      
+   }
    document.querySelector('.random-display').innerHTML = '';
    var random = Math.floor(Math.random() * nameList.length);
    var name = document.createElement('span');

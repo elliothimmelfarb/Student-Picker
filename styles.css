@@ -4,6 +4,10 @@ body {
    color: white;
 }
 
+h3 {
+   margin: 10px;
+}
+
 ul {
    list-style-type: none;
 }
@@ -19,6 +23,15 @@ textarea {
 
 .panel {
    padding-top: 10px;
+   //border: 1px red solid;
+}
+
+.students * {
+   display: inline;
+}
+
+.random * {
+   display: inline;
 }
 
 
