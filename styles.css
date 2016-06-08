@@ -1,0 +1,62 @@
+body {
+   text-align: center;
+}
+
+
+/*
+.app,
+.title {
+   text-align: center;
+}
+
+.display {
+   //border: solid 1px red;
+   //position: absolute;
+}
+
+.container {
+   display: flex;
+}
+
+.panel {
+   display: inline-block;
+   margin: 1em 5em 1em 5em;
+   width: 150px;
+   height: 300px;
+   //text-align: center;
+   //border: solid 1px red;
+}
+
+.display-area {
+   display: block;
+   //border: solid 1px red;
+}
+
+#name-box {
+   height: 100px;
+   width: 200px;
+   display: inline;
+}
+
+.button-div {
+   display: block;
+   position: relative;
+}
+
+.b {
+   //display: block;
+   //position: relative;
+}
+
+#teams-number {
+   width: 35px;
+   font-size: 1.2em;
+}
+
+.teams-form {
+   margin-top: 5px;
+}
+
+.names {
+   display: inline-block;
+}
