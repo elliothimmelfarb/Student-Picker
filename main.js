@@ -73,11 +73,13 @@ function makeTeams() {
       card.appendChild(li);
       //console.log(card);
       for (var j = 0; j < teamSize; j++) {
-         //console.log("student");
-         var student = document.createElement('li');
-         student.textContent = shufArr.pop();
-         //console.log('student:', student);
-         card.appendChild(student);
+         if (shufArr.length > 0) {
+            //console.log("student");
+            var student = document.createElement('li');
+            student.textContent = shufArr.pop();
+            //console.log('student:', student);
+            card.appendChild(student);
+         }
 
       }
       //console.log('card:', card);
