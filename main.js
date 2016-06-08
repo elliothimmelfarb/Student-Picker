@@ -18,6 +18,10 @@ function addNames() {
       return e && e !== " ";
    }
 
+   names = names.map(function(name) {
+      return name.trim();
+   });
+
    for (var i = 0; i < names.length; i++) {
       var name = document.createElement('span');
       name.classList.add('name');
@@ -69,7 +73,7 @@ function makeTeams() {
       //console.log('li:', li);
       li.classList.add('team-header');
       //console.log('li classList:', li.classList);
-      li.textContent = 'team:' + (i + 1);
+      li.textContent = 'team: ' + (i + 1);
       card.appendChild(li);
       //console.log(card);
       for (var j = 0; j < teamSize; j++) {
