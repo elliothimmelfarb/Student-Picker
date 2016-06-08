@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', init);
 
 var nameList = [];
-var teams = [];
-git avar randomName = '';
 
 function init() {
    document.querySelector('.add-names').addEventListener('click', addNames);
